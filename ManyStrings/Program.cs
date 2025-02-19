@@ -13,6 +13,10 @@ namespace ManyStrings
             string formatted_text = $"{welcome_text}\n\n> Player Name: {player_name} (NEW)\t{c}";
         
             Console.WriteLine(formatted_text);
+
+            int xp = 500;
+            int xp_needed = 1000;
+            Console.WriteLine($"O XP necessário é {xp_needed-xp} ({xp_needed} - {xp})");
         }
     }
 }
