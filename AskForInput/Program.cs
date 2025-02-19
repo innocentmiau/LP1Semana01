@@ -12,11 +12,16 @@ namespace AskForInput
             try {
                 number = int.Parse(input);
             } catch (Exception e) {
-                Console.WriteLine("Inseriu um número que não era inteiro, o valor 0 foi atribuido.");
+                Console.WriteLine("Inseriu algo que não era um número inteiro, o valor 0 foi atribuido.");
             }
             Console.WriteLine("Insira um número real:");
             input = Console.ReadLine();
-            float number2 = float.Parse(input);
+            float number2 = 0f;
+            try {
+                number2 = float.Parse(input);
+            } catch (Exception e) {
+                Console.WriteLine("Inseriu algo que não era um número real, o valor 0 foi atribuido.");
+            }
 
             Console.WriteLine($"A soma de {number} e {number2} é: {number+number2}");
         }
