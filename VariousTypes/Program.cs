@@ -11,12 +11,10 @@ namespace VariousTypes
             long xp_needed = 40000000000;
             Console.WriteLine($"Lvl. {level}: {xp}/{xp_needed}");
 
-            char[] cs = {'\u270D', '\u27A8', '\u260E', '\u2705'};
-            string chars = "";
-            foreach (char c in cs) {
-                chars += $" {c} /";
-            }
-            Console.WriteLine($"\nChars Unicode:{chars.Substring(0, chars.Length-1)}");
+            char c1 = '\u270D', c2 = '\u27A8', c3 = '\u260E', c4 = '\u2705';
+            Console.WriteLine($"\nChars Unicode: {c1} {c2} {c3} {c4}");
+
+
         }
     }
 }
