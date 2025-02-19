@@ -18,8 +18,9 @@ namespace VariousTypes
             float health_perc = 0.50f;
             Console.WriteLine($"\n\nHealth: {health} ({health_perc:p0})");
 
-            bool _truestStatement = "" == "" ? !false : !true;
-            Console.WriteLine($"bools: {_truestStatement} or {!_truestStatement}");
+            bool _truestStatment = true;
+            bool _falsestStatment = false;
+            Console.WriteLine($"bools: {_truestStatment} or {_falsestStatment}");
 
         }
     }
