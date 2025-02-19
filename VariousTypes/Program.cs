@@ -14,6 +14,10 @@ namespace VariousTypes
             char c1 = '\u270D', c2 = '\u27A8', c3 = '\u260E', c4 = '\u2705';
             Console.WriteLine($"\nChars Unicode: {c1} {c2} {c3} {c4}");
 
+            double health = 15.5d;
+            float health_perc = 0.50f;
+
+            Console.WriteLine($"\n\nHealth: {health} ({health_perc:p0})");
 
         }
     }
