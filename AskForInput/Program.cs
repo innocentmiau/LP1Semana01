@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace AskForInput
 {
@@ -23,7 +24,7 @@ namespace AskForInput
             while (true) {
                 input = Console.ReadLine();
                 try {
-                    number2 = float.Parse(input);
+                    number2 = float.Parse(input.Replace(",", "."));
                     break;
                 } catch (Exception e) {
                     Console.WriteLine("Inseriu algo que não era um número real, o valor 0 foi atribuido.");
