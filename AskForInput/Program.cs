@@ -15,7 +15,7 @@ namespace AskForInput
                 try {
                     number = int.Parse(input);
                     break;
-                } catch (Exception e) {
+                } catch (Exception) {
                     Console.WriteLine("Inseriu algo que não era um número inteiro, insira algo correto!");
                 }
             }
@@ -26,7 +26,7 @@ namespace AskForInput
                 try {
                     number2 = float.Parse(input.Replace(",", "."));
                     break;
-                } catch (Exception e) {
+                } catch (Exception) {
                     Console.WriteLine("Inseriu algo que não era um número real, o valor 0 foi atribuido.");
                 }
             }
