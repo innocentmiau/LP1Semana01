@@ -8,23 +8,20 @@ namespace AskForInput
         private static void Main(string[] args)
         {
             Console.WriteLine("Insira um número inteiro:");
-            string input;
-            int number = 0;
+            int number;
             while (true) {
-                input = Console.ReadLine();
                 try {
-                    number = int.Parse(input);
+                    number = int.Parse(Console.ReadLine());
                     break;
                 } catch (Exception) {
                     Console.WriteLine("Inseriu algo que não era um número inteiro, insira algo correto!");
                 }
             }
             Console.WriteLine("Insira um número real:");
-            float number2 = 0f;
+            float number2;
             while (true) {
-                input = Console.ReadLine();
                 try {
-                    number2 = float.Parse(input.Replace(",", "."));
+                    number2 = float.Parse(Console.ReadLine().Replace(",", "."));
                     break;
                 } catch (Exception) {
                     Console.WriteLine("Inseriu algo que não era um número real, insira algo correto!");
@@ -34,4 +31,5 @@ namespace AskForInput
             Console.WriteLine($"A soma de {number} e {number2} é: {number+number2}");
         }
     }
+
 }
