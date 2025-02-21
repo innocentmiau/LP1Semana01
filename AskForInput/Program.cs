@@ -27,7 +27,7 @@ namespace AskForInput
                     number2 = float.Parse(input.Replace(",", "."));
                     break;
                 } catch (Exception) {
-                    Console.WriteLine("Inseriu algo que não era um número real, o valor 0 foi atribuido.");
+                    Console.WriteLine("Inseriu algo que não era um número real, insira algo correto!");
                 }
             }
 
